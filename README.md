@@ -48,4 +48,4 @@ e.g Hello Container World! I have been seen **3** times.
 * internal_port : internal port of the service running in container(s)
 * external_port : external port (exposed port) of the docker container. It is used as a staring point and every new container uses the (+1) port.
 * links : a list of docker containers to be linked with this container
-* check_url : if defined it will be used to check tha health of its running containers (web apps0
+* check_url : if defined it will be used to check tha health of its running containers (web apps)
