@@ -1,8 +1,5 @@
 # Docker_deploy_tool
-A simple tool for building a docker image from a Dockerfile and staring multimple containers from it.
-The tool reads a configuration file *web_conf.yml* and creates/runs the specified number of containers
-and performs a basic health check by calling a **check status** url. Appart from creating docker images 
-containers and running them it also keeps the specified number of containers specified in *web_conf.yml*. 
+A simple tool for building a docker image from a Dockerfile and staring multimple containers from it.The tool reads a configuration file *web_conf.yml* and creates/runs the specified number of containers and performs a basic health check by calling a **check status** url. Appart from creating docker images containers and running them it also keeps the specified number of containers specified in *web_conf.yml*. 
 
 ## Parameters
 
@@ -11,9 +8,7 @@ containers and running them it also keeps the specified number of containers spe
 * --stats ; Show stats from all containers
 
 ## Example Configuration
-The following configuraion will deploy 2 instances of redis and 4 instaces of a simple web application which
-will be connected to the redis_1 container. Each deployed web application (container) uses the redis in order 
-to increase and get a **hits** counter.
+The following configuraion will deploy 2 instances of redis and 4 instaces of a simple web application which will be connected to the redis_1 container. Each deployed web application (container) uses the redis in order to increase and get a **hits** counter.
 
 e.g Hello Container World! I have been seen **3** times.  
 
