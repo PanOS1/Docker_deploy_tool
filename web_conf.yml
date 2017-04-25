@@ -1,0 +1,22 @@
+---
+0_redis:
+  build: false
+  instances: 2
+  image: redis
+  tag: latest
+  internal_port: 6379
+  external_port: 6379
+  check: False
+
+1_web_app:
+  build: true
+  instances: 1
+  image: simple_web_app
+  tag: 0.0.1
+  internal_port: 5000
+  external_port: 8000
+  links:
+    - redis_1
+  check_url: "http://127.0.0.1:{port}/status"
+
+
