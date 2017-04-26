@@ -7,6 +7,13 @@ A simple tool for building a docker image from a Dockerfile and staring multimpl
 * --logs : Show the logs from all containers
 * --stats ; Show stats from all containers
 
+## Example execution
+```shell
+docker_deploy_tool.py -b # build images/containers and run
+docker_deploy_tool.py -b --logs # build images/containers, run containers and view logs
+docker_deploy_tool.py --logs|--stats # Only view logs or stats
+```
+
 ## Example Configuration
 The following configuraion will deploy 2 instances of redis and 4 instaces of a simple web application which will be connected to the redis_1 container. Each deployed web application (container) uses the redis in order to increase and get a **hits** counter.
 
